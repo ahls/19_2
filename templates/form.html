@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block bodystuff %}
+<form action="/story/{{storyIndex}}">
+    {% for variable in words %}
+    <label for="{{variable}}">{{variable}}</label>
+    <input type="text" name="{{variable}}" minlength = "3"><br>
+    {% endfor %}
+    
+    <input type="submit" value="Submit">
+    
+</form>
+
+{% endblock %}

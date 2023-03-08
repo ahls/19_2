@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block bodystuff %}
+<form action="/story">
+    <label for="prompts">prompts</label>
+    <input type="text" name="prompts"><br>
+    
+    <label for="story">story</label>
+    <input type="text" name="story"><br>
+    <input type="submit" value="Submit">
+</form>
+
+{% endblock %}
